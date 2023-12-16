@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import "./Work.css";
+import "../App.css";
 
 import img1 from "../assets/images/time.png";
 

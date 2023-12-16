@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import "./Project.css";
+import "../App.css";
 
 import img1 from "../assets/images/time.png";
 
@@ -16,7 +17,7 @@ export default function ProjectList() {
     //console.log(data);
     setProjects(data);
   }
-
+  
   useEffect(() => {
     fetchProjects();
   }, []);
@@ -25,7 +26,9 @@ export default function ProjectList() {
 
   return (
     <div className="projectWrap" id="projects">
-      <div className="projectText">Projects</div>
+      <div>
+        <p className="projectText">Projects</p>
+      </div>
 
 
 {/* project 1 */}
@@ -41,9 +44,9 @@ export default function ProjectList() {
           <p>Timesheet Automation</p><p>(team project)</p></div>
         <div className="stackContainer">
           <span className="stack">Node.JS</span>
-          <span className="stack">API</span>
           <span className="stack">npm</span>
           <span className="stack">CLI</span>
+          <span className="stack">API</span>
           <span className="stack">Git</span>
           <span className="stack">Agile</span>
         </div>
@@ -75,9 +78,10 @@ export default function ProjectList() {
       </div>
     </div>
     <div className="projectContent">
-        <p className="projectText1">Developed CLI application using Node.js and Clockify's API</p>
-        <p className="projectText2">Contributed to CLI feature and global functions development, API debugging</p>
-        <p>Published package on NPM with 500+ downloads, allowing users to manage time efficiently</p>
+        <p className="projectText1">&#10095; Developed a CLI application using Node.js and Clockify's API</p>
+        <p className="projectText2">&#10095; Contributed to CLI features, global functions, console log styling, API
+debugging</p>
+        <p>&#10095; Published package on NPM with 500+ downloads, allowing developers to manage time in code editor</p>
     </div>
   </div>
 
