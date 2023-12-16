@@ -24,7 +24,7 @@ export default function WorkList() {
   const myImages = [img1];
 
   return (
-    <div className="projectWrap" id="projects">
+    <div className="projectWrap" id="work">
       <div className="projectText">Work Experience</div>
 
 

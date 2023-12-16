@@ -1,6 +1,5 @@
-import { useState } from "react";
 import "./Header.css";
-
+import "../App.css";
 import Nav from "./Nav";
 
 
@@ -15,6 +14,11 @@ export default function Header() {
             <li>
               <p className="nav-link nav-link-ltr">
                 <a href="#projects">Projects</a>
+              </p>
+            </li>
+            <li>
+              <p className="nav-link nav-link-ltr">
+                <a href="#work">Work</a>
               </p>
             </li>
             <li>
