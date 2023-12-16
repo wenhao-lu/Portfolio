@@ -101,6 +101,7 @@ debugging</p>
           <span className="stack">Node.JS</span>
           <span className="stack">Git</span>
           <span className="stack">Agile</span>
+          <span className="stack">Figma</span>
         </div>
         <ul>
           <li>
@@ -130,9 +131,9 @@ debugging</p>
       </div>
     </div>
     <div className="projectContent">
-        <p className="projectText1">•	Collaborated with UX Designers and Content Strategist to develop a Newcomers Event App comprising three screens</p>
-        <p className="projectText2">•	Solely developed the Event Listing page using React.JS</p>
-        <p>• Maintained mobile-friendly design principles and accessibility standards</p>
+        <p className="projectText1">&#10095; Collaborated with UX Designers and Content Strategist to develop a three screens App</p>
+        <p className="projectText2">&#10095; Solely developed the Event Listing page using React.JS, bringing designers' Figma prototype to life</p>
+        <p>&#10095; Maintained mobile-friendly design principles and accessibility standards</p>
     </div>
   </div>
 
@@ -148,10 +149,10 @@ debugging</p>
         <div className="projectTitle">
           <p>HTML 2D Game</p></div>
         <div className="stackContainer">
-          <span className="stack">HTML</span>
           <span className="stack">Canvas</span>
           <span className="stack">CSS</span>
-          <span className="stack">Vanilla JavaScript</span>
+          <span className="stack">JavaScript</span>
+          <span className="stack">RESTful API</span>
         </div>
         <ul>
           <li>
@@ -181,9 +182,9 @@ debugging</p>
       </div>
     </div>
     <div className="projectContent">
-        <p className="projectText1">Developed a 2D game using JavaScript and HTML Canvas</p>
-        <p className="projectText2">Implemented classic snake game mechanics with an anime-style UI</p>
-        <p>Integrated engaging graphics, music, and sound effects into a nostalgic gaming experience</p>
+        <p className="projectText1">&#10095; Developed a 2D game using pure JavaScript and HTML Canvas</p>
+        <p className="projectText2">&#10095; Implemented classic snake game mechanics with engaging anime-style UI, including music and sound effects</p>
+        <p>&#10095; Integrated a RESTful API to store user score data on an online server and interact with the database</p>
     </div>
   </div>
 
