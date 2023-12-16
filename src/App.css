@@ -24,6 +24,10 @@ body{
 
 
 /* Intro section */
+#mainIntro {
+    margin-top: 20vh;
+
+}
 .introContainer {
     display: flex;
     flex-direction: column;
@@ -36,12 +40,12 @@ body{
 }
 .resumeWrap{
     display: flex;
+}.resumeLink{
+    margin-left:0.4em;
 }
 .resumeLogo{
-    width: 6%;
+    width: 65%;
     cursor: pointer;
-    margin: auto;
-    margin-bottom:0.35em;
 }
 .resumeLogo:hover {
     animation: spin 1s linear infinite;

@@ -2,7 +2,7 @@ import "./Home.css";
 import BtnDown from "./BtnDown";
 export default function Home() {
   return (
-    <main id="main">
+    <main id="mainIntro">
       <div className="introContainer">
         <div className="intro">
           {/* the intro and sections' navigation button */}
@@ -11,7 +11,13 @@ export default function Home() {
           </p>
           <div className="resumeWrap">
             <p className="introText">Humble And Dedicated Full Stack Developer</p>
-            <img className="resumeLogo" src="assets/logo/resume.png" alt="resume"></img>
+            <a className="resumeLink" href="https://drive.google.com/file/d/1qqoPVDo8bVPeXqGp-bndiqXboVoau7ib/view?usp=sharing" target="_blank">
+              <img 
+                className="resumeLogo" 
+                src="assets/logo/resume.png" 
+                alt="resume">
+              </img>
+            </a>
           </div>
           
         </div>
