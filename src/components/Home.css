@@ -1,0 +1,33 @@
+#main {
+  margin-top: 15vh;
+  /* 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+  background-color: #f7f7f7;*/
+}
+
+
+
+
+.intro {
+  font-size: 5vw;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: 'League Spartan', sans-serif;
+}
+.name{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*
+.name {
+  background: linear-gradient(to right, #ff52dc, #4a4aff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Ubuntu", sans-serif;
+}
+*/

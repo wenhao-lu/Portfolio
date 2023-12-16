@@ -1,0 +1,165 @@
+.projectWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  /* padding: 48px;
+  background-color: #f7f7f7;*/
+  border-radius: 24px;
+}
+
+.projectContainer {
+  margin-bottom: 5rem;
+  transition: all 0.3s ease;
+}
+
+.projectImg {
+  display: flex;
+  justify-content: center;
+  width: 35vw;
+  border-right: 2px;
+  border-left: 0;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #181818, #eee, #181818) 1 100%;
+  padding-right: 7vw;
+  margin-left: 7.3vw;
+}
+.projectDetails {
+  width: 35vw;
+  text-align: center;
+  padding: 0 2.2vw;
+}
+.projectImg img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.projectImg img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.projectTitle {
+  font-size: 3vw;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 1rem 0 4rem 0;
+  font-family: 'League Spartan', sans-serif;
+}
+.projectTitle p{
+  margin: 0;
+
+}
+.projectDetails ul {
+  display: flex;
+  gap: 64px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.projectDetails ul li {
+  list-style: none;
+}
+.projectDetails ul li:hover img {
+  animation: spin 1s linear infinite;
+}
+
+.projectContent {
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 3rem;
+  text-align: center;
+}
+.projectCard {
+  display: flex;
+}
+
+.stackContainer {
+  height: 10vh;
+  margin-bottom: 1rem;
+}
+
+.stack {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 5px;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-size: 0.95vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: transform 0.2s ease-in-out;
+}
+
+.stack:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.projectLink1 {
+  margin-top: 5px;
+  width: 3vw;
+}
+.projectLink2 {
+  width: 3.65vw;
+}
+.projectLink1:hover,
+.projectLink2:hover {
+  transform: translateY(-3px);
+}
+.projectText {
+  font-family: "Roboto", sans-serif;
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(to right, #ff52dc, #4a4aff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin: 4rem;
+}
+.contactForm input:focus,
+.contactForm textarea:focus,
+.contactForm select:focus {
+  border-color: #6b48ff;
+}
+.projectText1{
+  margin-top: 0;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.scrollButton {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.scrollButton:hover {
+  opacity: 1;
+}
