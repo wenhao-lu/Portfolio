@@ -7,11 +7,11 @@ export default function Home() {
         <div className="intro">
           {/* the intro and sections' navigation button */}
           <p className="name">
-            Kevin - Wenhao Lu
+            Kevin - Wenhao Lu 
           </p>
           <div className="resumeWrap">
             <p className="introText">Humble And Dedicated Full Stack Developer</p>
-            <a className="resumeLink" href="https://drive.google.com/file/d/1qqoPVDo8bVPeXqGp-bndiqXboVoau7ib/view?usp=sharing" target="_blank">
+            <a className="resumeLink" href="../assets/files/resume.pdf" target="_blank">
               <img 
                 className="resumeLogo" 
                 src="assets/logo/resume.png" 
