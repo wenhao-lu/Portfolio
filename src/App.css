@@ -37,16 +37,17 @@ body{
 .resumeWrap{
     display: flex;
 }
-.contactImg{
-    width: 8%;
+.resumeLogo{
+    width: 6%;
     cursor: pointer;
-    margin: 0.2em 1em 0.5em 1em;
+    margin: auto;
+    margin-bottom:0.35em;
 }
-.contactImg:hover {
+.resumeLogo:hover {
     animation: spin 1s linear infinite;
   }
 .introText{
-  font-size: 2vw;
+  font-size: 1.8vw;
   font-weight: bold;
   color: #ffffff;
   text-align: center;

@@ -10,8 +10,8 @@ export default function Home() {
             Kevin - Wenhao Lu
           </p>
           <div className="resumeWrap">
-            <p className="introText">Full Stack Developer</p>
-            <img className="contactImg" src="assets/logo/resume.png" alt="resume"></img>
+            <p className="introText">Humble And Dedicated Full Stack Developer</p>
+            <img className="resumeLogo" src="assets/logo/resume.png" alt="resume"></img>
           </div>
           
         </div>
