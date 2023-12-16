@@ -1,17 +1,16 @@
 var canvas = document.querySelector("canvas");
 
-// set size in the JS in order to make the canvas seize the whole browser window
+// set size of canvas to cover the whole browser window
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-// c = context
 var c = canvas.getContext("2d");
 
 var mouse = {
   x: undefined,
   y: undefined,
 };
-// set enlarge and shrink radius size
+// set animations of enlarge and shrink radius size
 var maxRadius = 40;
 var minRadius = 2;
 var colorArray = ["#FC8DCA", "#C37EDB", "#B7A6F6", "#88A3E2", "#AAECFC"];
@@ -21,7 +20,7 @@ window.addEventListener("mousemove", function (event) {
   mouse.x = event.x;
   mouse.y = event.y;
 });
-// when resize the window, canvas will be resized as well
+// when resize the window, canvas will be resized as well (to cover browser window)
 window.addEventListener("resize", function (event) {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
@@ -52,21 +51,20 @@ function Circle(x, y, dx, dy, radius) {
 
     c.beginPath();
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-    // give circle a stroke
-    //c.strokeStyle = "green";
-    //c.stroke();
+
     // fill the circle with color
     c.fillStyle = gradient;
-    c.fill(); // fill black if no fillStyle
+    // fill black if no fillStyle
+    c.fill();
   };
 
+  // make the circles bounce inside of the screen
   this.update = function () {
-    // when positon.x beyond the screen right or the left, then backward the circle
-    // the circle bounds between the screen
+    // when positon.x beyond the screen right or the left, then bounce back the circle
     if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
       this.dx = -this.dx;
     }
-    // bounds off the y direction too
+    // bounce off the y direction
     if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
       this.dy = -this.dy;
     }
@@ -74,8 +72,8 @@ function Circle(x, y, dx, dy, radius) {
     this.x += this.dx;
     this.y += this.dy;
 
-    //interactivity
-    // circle follow the mouse
+    // interacte the process
+    // circles go following the mouse cursor position
     var disX = mouse.x - this.x;
     var disy = mouse.y - this.y;
     var distance = Math.sqrt(disX * disX + disy * disy);
@@ -90,29 +88,29 @@ function Circle(x, y, dx, dy, radius) {
       this.y += this.disy;
     }
 
-    // when the distance between mouse position and circle position < 50px, then enlarge the radius
-    // when the distance between mouse position and circle position
+    // when the distance between mouse position and circle position < 50px, then increase the radius
+    // circle close to the mouse will be enlarged, make it an absorbing animation effect
     if (
       mouse.x - this.x < 50 && // right side of the mouse is always growing
       mouse.x - this.x > -50 && // let the right side follow the rule above
       mouse.y - this.y < 50 &&
       mouse.y - this.y > -50
     ) {
+      // give the circle a maximum radius
       if (this.radius < maxRadius) {
         this.radius += 1;
       }
+      // this.minRadius to ensure circle shrink to original size when left the mouse
     } else if (this.radius > this.minRadius) {
-      // this.minRadius to ensure shrink to original size
-      // when circle leave the mouse, then shrink the radius
       this.radius -= 1;
     }
-
     this.draw();
   };
 }
 
 var circleArray = [];
-for (var i = 0; i < 800; i++) {
+// create the amount of circles on the screen
+for (var i = 0; i < 200; i++) {
   // circle's initial position
   var radius = Math.random() * 8 + 1;
   var x = Math.random() * (innerWidth - radius * 2) + radius;
@@ -127,7 +125,7 @@ for (var i = 0; i < 800; i++) {
 
 // 'animate' loop function
 function animate() {
-  // call the loop function(drawing all the time)
+  // call the loop function(keep drawing)
   requestAnimationFrame(animate);
   // clear the whole canvas after every draw
   c.clearRect(0, 0, innerWidth, innerHeight);
