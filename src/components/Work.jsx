@@ -35,18 +35,6 @@ export default function WorkList() {
           <img className="work-image" src="assets/images/unisync.png" alt="work-image"/>
         </a>
 
-        <ul>
-          <li>
-            <a href="https://unisyncdemo.wlkevin.com/" target="_blank">
-              <img 
-                src="assets/logo/live.png"
-                className="workLink"
-                alt="live"
-              />
-            </a>
-          </li>
-        </ul>
-
       </div>
 
     </div>
