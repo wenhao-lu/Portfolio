@@ -71,6 +71,20 @@ export default function Education() {
             <span className="course">MERN</span>
           </div>
         </div>
+
+        <div className="courseCard">
+          <p>IDE&<br></br>Tools</p>
+          <i class="fas fa-tools"></i>
+          <div className="courseWrap">
+            <span className="course">VS Code</span>
+            <span className="course">Postman</span>
+            <span className="course">MAMP</span>
+            <span className="course">CLI</span>
+            <span className="course">Localwp</span>
+            <span className="course">MongoDB</span>
+            <span className="course">DBeaver</span>
+          </div>
+        </div>
       
       </div>
 
@@ -78,7 +92,7 @@ export default function Education() {
       <div className="courseContainer2">
         <div className="courseCard">
           <p>TECHNIQUES</p>
-          <i class="far fa-window-restore"></i>
+          <i class="fas fa-sitemap"></i>
           <div className="courseWrap">
             <span className="course">MVC</span>
             <span className="course">RESTful API</span>
@@ -91,7 +105,7 @@ export default function Education() {
 
         <div className="courseCard">
           <p>E-COMMERCE</p>
-          <i class="fab fa-laravel"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
           <div className="courseWrap">
             <span className="course">Shopify</span>
             <span className="course">WordPress</span>
@@ -101,7 +115,7 @@ export default function Education() {
 
         <div className="courseCard">
           <p>Project Management</p>
-          <i class="fab fa-laravel"></i>
+          <i class="fa-solid fa-list-check"></i>
           <div className="courseWrap">
             <span className="course">Git</span>
             <span className="course">Agile</span>
@@ -111,26 +125,7 @@ export default function Education() {
           </div>
         </div>
 
-        <div className="courseCard">
-          <p>Tools/IDE</p>
-          <i class="fab fa-laravel"></i>
-          <div className="courseWrap">
-            <span className="course">VS Code</span>
-            <span className="course">Postman</span>
-            <span className="course">MAMP</span>
-            <span className="course">Localwp</span>
-            <span className="course">Terminal</span>
-            <span className="course">MongoDB</span>
-            <span className="course">DBeaver</span>
-            <span className="course">Visual Studio</span>
-          </div>
-        </div>
-      
       </div>
-
-
-
-
 
     </div>
   );

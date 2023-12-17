@@ -156,7 +156,7 @@ body{
     border-radius: 20px;
     width: 80%;
     margin: auto;
-    margin-bottom: 6em;
+    margin-bottom: 8em;
 }
 .workText {
     font-size: 4vw;
@@ -172,9 +172,7 @@ body{
 .workDetails {
     width: 30vw;
     padding: 2em 0 2em 2em;
-    background-image: url(assets/images/backgroundImg-7.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(180deg, #2e2f32, #192838);
     border-radius: 10px;
     margin-right: 4em;
 } 
@@ -186,7 +184,7 @@ body{
 .workContent p{
     font-family: monospace;
     text-align: start;
-    margin-left: 4em;
+    margin-left: 6em;
 }
 .companyLogo{
     width: 2vw;
@@ -229,7 +227,7 @@ body{
     padding: 0px;
 }
 .workStack{
-    height:6vh;
+    height:4vh;
 }
 .workStack span{
     margin-right: 10px;
@@ -271,6 +269,7 @@ body{
     font-weight: bold;
     font-family: 'League Spartan', sans-serif;
     margin-bottom: 0.3em;
+    color: #81bff3;
 }
 .educationDate{
     font-size: 1em;
@@ -298,7 +297,8 @@ body{
     padding: 1em;
     text-transform: uppercase;
 }
-.fa-window-restore,.fa-server,.fa-laravel{
+.fa-window-restore,.fa-laravel,.fa-tools,
+.fa-sitemap,.fa-cart-shopping,.fa-list-check{
     font-size: 3em;
 }
 .courseWrap{
@@ -324,4 +324,7 @@ body{
     display: flex;
     justify-content: center;
     margin: auto;
+}
+.educationWrap{
+    margin-bottom: 8em;
 }
