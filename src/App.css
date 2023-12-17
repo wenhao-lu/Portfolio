@@ -170,8 +170,12 @@ body{
 }
 .workDetails {
     width: 30vw;
-    text-align: center;
-    padding-right: 3vw;
+    padding: 2em 0 2em 2em;
+    background-image: url(assets/images/backgroundImg-7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin-right: 4em;
 } 
 .workContent{
     font-size: 1.4em;
@@ -187,16 +191,15 @@ body{
     width: 2vw;
 }
 .workCompany{
-    font-size: 3vw;
+    font-size: 1.8vw;
     font-weight: bold;
     margin-top: 0;
     color: #ffffff;
     font-family: 'League Spartan', sans-serif;
 }
 .workTitle{
-    font-size: 2vw;
+    font-size: 1.2vw;
     color: #ffffff;
-    font-family: 'League Spartan', sans-serif;
     margin-bottom: 1.5em;
 }
 .workLink{
@@ -226,4 +229,12 @@ body{
 }
 .workStack{
     height:6vh;
+}
+.workStack span{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #81bff3;
+    font-size: 0.95vw;
+    font-weight: bold;
+    text-transform: uppercase;
 }
