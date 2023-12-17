@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import "./Education.css";
+/*import "./Education.css";*/
+import "../App.css";
 
 /*
 education props: {
@@ -14,7 +15,7 @@ education props: {
 
 export default function Education() {
   const [educations, setEducations] = useState([]);
-  // fetch all the education data from my laravel-CMS backend server using API
+  // fetch all the education data from my backend server using API
   async function fetchEducations() {
     let response = await fetch("https://c9674390.mywhc.ca/api/educations");
     let data = await response.json();
@@ -36,9 +37,101 @@ export default function Education() {
           <div className="educationSchool">{education.school}</div>
           <div className="educationMajor">{education.major}</div>
           <div className="educationDate">{education.date}</div>
-          <div className="educationCourse">{education.course}</div>
         </div>
       ))}
+
+      {/* courseContainer-1 */}
+      <div className="courseContainer1">
+        <div className="courseCard">
+          <p>FULL STACK<br></br>FRONTEND&BACKEND</p>
+          <i class="far fa-window-restore"></i>
+          <div className="courseWrap">
+            <span className="course">HTML</span>
+            <span className="course">CSS</span>
+            <span className="course">JavaScript</span>
+            <span className="course">C#</span>
+            <span className="course">PHP</span>
+            <span className="course">MySQL</span>
+            <span className="course">React</span>
+            <span className="course">Node.js</span>
+            <span className="course">Express</span>
+          </div>
+        </div>
+
+        <div className="courseCard">
+          <p>LIBRARIES&<br></br>FRAMEWORKS</p>
+          <i class="fab fa-laravel"></i>
+          <div className="courseWrap">
+            <span className="course">jQuery</span>
+            <span className="course">Laravel</span>
+            <span className="course">Bootstrap</span>
+            <span className="course">ASP.NET</span>
+            <span className="course">Jasmine</span>
+            <span className="course">LAMP</span>
+            <span className="course">MERN</span>
+          </div>
+        </div>
+      
+      </div>
+
+      {/* courseContainer-2 */}
+      <div className="courseContainer2">
+        <div className="courseCard">
+          <p>TECHNIQUES</p>
+          <i class="far fa-window-restore"></i>
+          <div className="courseWrap">
+            <span className="course">MVC</span>
+            <span className="course">RESTful API</span>
+            <span className="course">Hosting</span>
+            <span className="course">SEO</span>
+            <span className="course">Security</span>
+            <span className="course">Usability</span>
+          </div>
+        </div>
+
+        <div className="courseCard">
+          <p>E-COMMERCE</p>
+          <i class="fab fa-laravel"></i>
+          <div className="courseWrap">
+            <span className="course">Shopify</span>
+            <span className="course">WordPress</span>
+            <span className="course">CMS</span>
+          </div>
+        </div>
+
+        <div className="courseCard">
+          <p>Project Management</p>
+          <i class="fab fa-laravel"></i>
+          <div className="courseWrap">
+            <span className="course">Git</span>
+            <span className="course">Agile</span>
+            <span className="course">Jira</span>
+            <span className="course">Trello</span>
+            <span className="course">Scrum</span>
+          </div>
+        </div>
+
+        <div className="courseCard">
+          <p>Tools/IDE</p>
+          <i class="fab fa-laravel"></i>
+          <div className="courseWrap">
+            <span className="course">VS Code</span>
+            <span className="course">Postman</span>
+            <span className="course">MAMP</span>
+            <span className="course">Localwp</span>
+            <span className="course">Terminal</span>
+            <span className="course">MongoDB</span>
+            <span className="course">DBeaver</span>
+            <span className="course">Visual Studio</span>
+          </div>
+        </div>
+      
+      </div>
+
+
+
+
+
     </div>
   );
 }
