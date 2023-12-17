@@ -67,6 +67,12 @@ body{
 }
 
 /* Project section */
+.projectWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border-radius: 24px;
+}
 .projectContainer {
     margin-bottom: 8rem;
     transition: all 0.3s ease;
@@ -91,7 +97,7 @@ body{
     font-weight: bold;
     text-transform: uppercase;
 }
-.projectCard {
+.projectCard, .workCard{
     display: flex;
     justify-content: center;
 }
@@ -131,10 +137,93 @@ body{
     font-size: 1.4em;
     color: #ffffff;
     margin-top: 2rem;
-    text-align: center;
 }
 .projectContent p{
     font-family: monospace;
     text-align: start;
     margin-left: 12em;
+}
+
+/* Work section */
+.workWrap{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-image: url(assets/images/backgroundImg-6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+}
+.workText {
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    color: #4C8AF2;
+    margin: 4rem;
+}
+.workContainer {
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+.workDetails {
+    width: 30vw;
+    text-align: center;
+    padding-right: 3vw;
+} 
+.workContent{
+    font-size: 1.4em;
+    color: #ffffff;
+    margin: 2rem auto;
+}
+.workContent p{
+    font-family: monospace;
+    text-align: start;
+    margin-left: 4em;
+}
+.companyLogo{
+    width: 2vw;
+}
+.workCompany{
+    font-size: 3vw;
+    font-weight: bold;
+    margin-top: 0;
+    color: #ffffff;
+    font-family: 'League Spartan', sans-serif;
+}
+.workTitle{
+    font-size: 2vw;
+    color: #ffffff;
+    font-family: 'League Spartan', sans-serif;
+    margin-bottom: 1.5em;
+}
+.workLink{
+    width: 3vw;
+}
+.workLink:hover {
+    animation: spin 1s linear infinite;
+}
+.workImg {
+    width: 30vw;
+}
+.work-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+} 
+.work-image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.workImg ul{
+    justify-content: center;
+    display: flex;
+    padding: 0px;
+}
+.workStack{
+    height:10vh;
 }
