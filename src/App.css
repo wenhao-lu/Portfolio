@@ -58,7 +58,6 @@ body{
       transform: rotateY(360deg);
     }
 }
-  
 .introText{
   font-size: 1.8vw;
   font-weight: bold;
@@ -66,7 +65,99 @@ body{
   text-align: center;
 }
 
+/* Scroll up button */
+.scrollUpButton {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    font-size: 2em;
+    color: gray;
+    cursor: pointer;
+    border: 1px solid gray;
+    width: 2vw;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #fefefe38, transparent);
+    text-align: center;
+}
+.scrollUpButton:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
 /* Project section */
+
+.projectCont{
+    background: linear-gradient(180deg, rgb(42,43,45,0.8), rgb(42,44,48,0.6));
+    margin: auto;
+    width: 70%;
+    border-radius: 20px;
+    display: flex;
+    margin-bottom: 4em;
+}
+.projectLeft{
+    display: flex;
+    flex-flow: column;
+}
+.projectIMG{
+    padding:1em;
+}
+.pLink{
+    display: flex;
+    justify-content: center;
+    background-color:#151617;
+    height: 10vh;
+    border-top-left-radius: 20px;
+}
+.stackWrap{
+    display: flex;
+    margin-left: 2em;
+}
+.projectLink{
+    background-color:#151617;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-top-right-radius: 20px;
+}
+.stack1{
+    color: #c1c4c6;
+    padding:1em;
+    align-self: center;
+    text-transform: uppercase;
+}
+.fa-globe,.fa-github{
+    color: #c1c4c6;
+    font-size: 2em;
+    padding: 0 1em;
+}
+.fa-globe:hover,.fa-github:hover{
+    color: white;
+}
+.projectImage{
+    width: 30vw;
+    border-radius: 10px;
+}
+.projectName {
+    font-size: 1.6vw;
+    color: #ffffff;
+    margin: 1rem 0 2rem 0;
+    font-family: monospace;
+    text-align: center;
+}
+.projectName p{
+    margin: 0;
+}
+.projectContent1 {
+    font-size: 1.4em;
+    color: #ffffff;
+}
+.projectContent1 p{
+    font-family: monospace;
+    text-align: start;
+    margin-left: 2em;
+}
+
 .projectWrap {
     display: flex;
     flex-direction: column;
@@ -149,11 +240,6 @@ body{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-image: url(assets/images/backgroundImg-6.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
     width: 80%;
     margin: auto;
     margin-bottom: 8em;
@@ -172,7 +258,7 @@ body{
 .workDetails {
     width: 30vw;
     padding: 2em 0 2em 2em;
-    background: linear-gradient(180deg, #2e2f32, #192838);
+    background: radial-gradient(circle, rgba(35, 39, 43, 0.6), rgba(17, 29, 45, 0.9));
     border-radius: 10px;
     margin-right: 4em;
 } 
@@ -327,4 +413,76 @@ body{
 }
 .educationWrap{
     margin-bottom: 8em;
+}
+
+/* Contact section */
+.contactWrap{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vw;
+}
+.contactText{
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    color: #4C8AF2;
+    margin: 4rem;
+}
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 48px;
+    border-radius: 24px;
+    width: 40vw;
+    background: linear-gradient(180deg, rgba(76, 138, 242, 0.4), transparent);
+}
+.formLabel {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'League Spartan', sans-serif;
+}
+.formInput,
+.formTextarea,
+.formSelect {
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  outline: none;
+  background-color: #e7e7e7;
+}
+
+.formInput:focus,
+.formTextarea:focus,
+.formSelect:focus {
+    border: 3px solid #4C8AF2;
+}
+.formBtn {
+    background-color: #4C8AF2;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 10vw;
+    align-self: center;
+    margin-top: 1rem;
+}
+.formBtn:hover {
+    background-color: #4a4aff;
+    transform: scale(1.05);
+}
+.formSubmitted{
+    color: #81bff3;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    align-self: center;
 }

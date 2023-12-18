@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import "./Contact.css";
+import "../App.css";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -35,14 +35,7 @@ export default function Contact() {
       <div className="contactText">Contact Me</div>
 
       <div className="contactWrap">
-        <div className="contactQuote">
-          <p className="quote1">Collaborating for Success</p>
-          <p className="quote2">
-            "The stars are like the fingerprints of the universe, each one
-            unique and beautiful in its own way. They remind us that we are all
-            part of something greater, and that we are all connected."
-          </p>
-        </div>
+        
 
         {formSubmitted ? (
           <div className="formSubmitted">

@@ -2,17 +2,6 @@ import { useState, useEffect } from "react";
 /*import "./Education.css";*/
 import "../App.css";
 
-/*
-education props: {
-  id: number,
-  degree: string,
-  major: string,
-  school: string,
-  date: datetime,
-  course: string,
-}
-*/
-
 export default function Education() {
   const [educations, setEducations] = useState([]);
   // fetch all the education data from my backend server using API
@@ -44,7 +33,7 @@ export default function Education() {
       <div className="courseContainer1">
         <div className="courseCard">
           <p>FULL STACK<br></br>FRONTEND&BACKEND</p>
-          <i class="far fa-window-restore"></i>
+          <i className="far fa-window-restore"></i>
           <div className="courseWrap">
             <span className="course">HTML</span>
             <span className="course">CSS</span>
@@ -60,7 +49,7 @@ export default function Education() {
 
         <div className="courseCard">
           <p>LIBRARIES&<br></br>FRAMEWORKS</p>
-          <i class="fab fa-laravel"></i>
+          <i className="fab fa-laravel"></i>
           <div className="courseWrap">
             <span className="course">jQuery</span>
             <span className="course">Laravel</span>
@@ -74,7 +63,7 @@ export default function Education() {
 
         <div className="courseCard">
           <p>IDE&<br></br>Tools</p>
-          <i class="fas fa-tools"></i>
+          <i className="fas fa-tools"></i>
           <div className="courseWrap">
             <span className="course">VS Code</span>
             <span className="course">Postman</span>
@@ -92,7 +81,7 @@ export default function Education() {
       <div className="courseContainer2">
         <div className="courseCard">
           <p>TECHNIQUES</p>
-          <i class="fas fa-sitemap"></i>
+          <i className="fas fa-sitemap"></i>
           <div className="courseWrap">
             <span className="course">MVC</span>
             <span className="course">RESTful API</span>
@@ -105,7 +94,7 @@ export default function Education() {
 
         <div className="courseCard">
           <p>E-COMMERCE</p>
-          <i class="fa-solid fa-cart-shopping"></i>
+          <i className="fa-solid fa-cart-shopping"></i>
           <div className="courseWrap">
             <span className="course">Shopify</span>
             <span className="course">WordPress</span>
@@ -115,7 +104,7 @@ export default function Education() {
 
         <div className="courseCard">
           <p>Project Management</p>
-          <i class="fa-solid fa-list-check"></i>
+          <i className="fa-solid fa-list-check"></i>
           <div className="courseWrap">
             <span className="course">Git</span>
             <span className="course">Agile</span>

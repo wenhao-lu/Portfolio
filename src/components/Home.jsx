@@ -1,4 +1,5 @@
 import "./Home.css";
+import "../App.css";
 import BtnDown from "./BtnDown";
 export default function Home() {
   return (
