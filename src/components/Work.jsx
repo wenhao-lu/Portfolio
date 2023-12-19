@@ -9,12 +9,15 @@ export default function WorkList() {
 {/* work 1 */}
 <div className="workContainer">
     <div className="workCard">
-
+      
       <div className="workDetails">
+
         <div>
           <p className="workCompany">Unisync Group Limited</p>
+          <div className="workHr"><hr></hr></div>
           <p className="workTitle">Electronic Store Front Assistant<br></br>Intern Jul-Aug 2023</p>
         </div>
+        <div>
         <div className="workStack">
           <span>Shopify</span>
           <span>Wordpress</span>
@@ -27,6 +30,7 @@ export default function WorkList() {
           <span>Liquid</span>
           <span>JavaScript</span>
           <span>Data Management</span> 
+        </div>
         </div>
       </div>
 

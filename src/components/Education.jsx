@@ -29,8 +29,8 @@ export default function Education() {
         </div>
       ))}
 
-      {/* courseContainer-1 */}
-      <div className="courseContainer1">
+      {/* courseContainer */}
+      <div className="courseContainer">
         <div className="courseCard">
           <p>FULL STACK<br></br>FRONTEND&BACKEND</p>
           <i className="far fa-window-restore"></i>
@@ -75,35 +75,31 @@ export default function Education() {
           </div>
         </div>
       
-      </div>
-
-      {/* courseContainer-2 */}
-      <div className="courseContainer2">
         <div className="courseCard">
-          <p>TECHNIQUES</p>
+          <p>TECHNIQUES<br></br><span className="courseSpan">span</span></p>
           <i className="fas fa-sitemap"></i>
           <div className="courseWrap">
             <span className="course">MVC</span>
             <span className="course">RESTful API</span>
             <span className="course">Hosting</span>
-            <span className="course">SEO</span>
+            <span className="course">CMS</span>
             <span className="course">Security</span>
             <span className="course">Usability</span>
           </div>
         </div>
 
         <div className="courseCard">
-          <p>E-COMMERCE</p>
+          <p>E-COMMERCE<br></br><span className="courseSpan">span</span></p>
           <i className="fa-solid fa-cart-shopping"></i>
           <div className="courseWrap">
             <span className="course">Shopify</span>
             <span className="course">WordPress</span>
-            <span className="course">CMS</span>
+            <span className="course">SEO</span>
           </div>
         </div>
 
         <div className="courseCard">
-          <p>Project Management</p>
+          <p>Project Management<br></br><span className="courseSpan">span</span></p>
           <i className="fa-solid fa-list-check"></i>
           <div className="courseWrap">
             <span className="course">Git</span>

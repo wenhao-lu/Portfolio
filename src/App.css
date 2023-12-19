@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=League+Spartan&family=Open+Sans&family=Pacifico&family=Ubuntu&display=swap');
-
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style-type: none;
 }
 
 /* Header section */
@@ -11,7 +16,6 @@ body{
     align-items: center;
     padding: 2em 0 7em 2em;
 }
-  
 .logo{
     margin-left: 4rem;
     width: 6vw;
@@ -21,21 +25,68 @@ body{
 .linkContainer{
     margin-left: 28vw;
 }
+.main-nav {
+    margin-right: 5rem;
+}
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-nav li {
+    margin-right: 2rem;
+}
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+.main-nav a img{
+    width: 3vw;
+}
+.main-nav a img:hover {
+    animation: spin 1s linear infinite;
+}
+.contactMobile{
+    display: none;
+}
+.NavBtn{
+    display: none;
+}
 
+/* Mobnile dropdown menu */
+.mobile-menu {
+    z-index: 1;
+    position: fixed;
+    top: 1.5em;
+    right: 1em;
+}
+.mobile-menu ul{
+    padding: 0;
+}
+.mobile-menu ul li{
+    padding: 1em 0.5em;
+}
+.mobile-menu ul li a{
+    font-size: 0.8em;
+    color: white;
+    text-decoration: none;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+}
 
 /* Intro section */
 #mainIntro {
     margin-top: 20vh;
-
 }
 .introContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 70vw;
-    margin-top: -5rem;
-    margin-left: 18rem;
-    margin-bottom: 10em;
+    margin:-5em 0 10em 18em;
     padding: 0px;
 }
 .resumeWrap, .nameWrap{
@@ -44,7 +95,7 @@ body{
     margin-left:0.4em;
 }
 .resumeLogo{
-    width: 65%;
+    width: 3vw;
     cursor: pointer;
 }
 .resumeLogo:hover {
@@ -63,6 +114,26 @@ body{
   font-weight: bold;
   color: #ffffff;
   text-align: center;
+}
+
+/* Scroll down button */
+.scrollContainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12rem;
+  }
+  .fa-angle-double-down {
+    font-size: 2em;
+    color: #333;
+    animation: slideDown 2s infinite;
+  }
+  @keyframes slideDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(10px); 
+    }
 }
 
 /* Scroll up button */
@@ -99,7 +170,11 @@ body{
     flex-flow: column;
 }
 .projectIMG{
-    padding:1em;
+    padding:2em;
+}
+.projectIMG a{
+    display: flex;
+    justify-content: center;
 }
 .pLink{
     display: flex;
@@ -135,13 +210,13 @@ body{
     color: white;
 }
 .projectImage{
-    width: 30vw;
+    width: 26vw;
     border-radius: 10px;
 }
 .projectName {
-    font-size: 1.6vw;
+    font-size: 1.6em;
     color: #ffffff;
-    margin: 1rem 0 2rem 0;
+    margin: 1em 0 1em 0;
     font-family: monospace;
     text-align: center;
 }
@@ -155,7 +230,8 @@ body{
 .projectContent1 p{
     font-family: monospace;
     text-align: start;
-    margin-left: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .projectWrap {
@@ -257,8 +333,7 @@ body{
 }
 .workDetails {
     width: 30vw;
-    padding: 2em 0 2em 2em;
-    background: radial-gradient(circle, rgba(35, 39, 43, 0.6), rgba(17, 29, 45, 0.9));
+    background: linear-gradient(180deg, rgba(35, 39, 43, 0.6), rgba(17, 29, 45, 0.9));
     border-radius: 10px;
     margin-right: 4em;
 } 
@@ -281,11 +356,14 @@ body{
     margin-top: 0;
     color: #ffffff;
     font-family: 'League Spartan', sans-serif;
+    padding: 1em 0 0 1em;
+    margin-bottom: 0;
 }
 .workTitle{
     font-size: 1.2vw;
     color: #ffffff;
     margin-bottom: 1.5em;
+    padding-left: 1.5em;
 }
 .workLink{
     width: 3vw;
@@ -314,6 +392,8 @@ body{
 }
 .workStack{
     height:4vh;
+    padding-left: 1.8em;
+    padding-bottom: 0.6em;
 }
 .workStack span{
     margin-right: 10px;
@@ -361,9 +441,11 @@ body{
     font-size: 1em;
     margin-bottom: 3em;
 }
-.courseContainer1{
-    display: flex;
-    justify-content: center;
+.courseContainer{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    width: 70vw;
     margin: auto;
 }
 .courseCard{
@@ -382,6 +464,9 @@ body{
     font-family: 'League Spartan', sans-serif;
     padding: 1em;
     text-transform: uppercase;
+}
+.courseSpan{
+    visibility: hidden;
 }
 .fa-window-restore,.fa-laravel,.fa-tools,
 .fa-sitemap,.fa-cart-shopping,.fa-list-check{
@@ -405,11 +490,6 @@ body{
     font-size: 0.7vw;
     font-weight: bold;
     text-transform: uppercase;
-}
-.courseContainer2{
-    display: flex;
-    justify-content: center;
-    margin: auto;
 }
 .educationWrap{
     margin-bottom: 8em;
@@ -485,4 +565,215 @@ body{
     text-align: center;
     margin-bottom: 2rem;
     align-self: center;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 440px){
+    #header{
+        padding:0;
+    }
+    .logo{
+        margin-left: 1rem;
+        width: 14vw;
+    }
+    .linkContainer {
+        margin-left: 0;
+    }
+    .navbar {
+        display: none !important;
+    }
+    .main-nav{
+        display: none !important;
+    }
+    .fa-bars{
+        color:#e7e7e7;
+        top:0.5em;
+        right:0.5em;
+    }
+    .introContainer {
+        width: 100%;
+        margin:-5em 0 6em 0;
+    }
+    .intro{
+        font-size: 8vw !important;
+    }
+    .resumeWrap{
+        flex-flow: column;
+    }
+    .introText{
+        font-size: 3vw !important;
+        margin: 2em auto;
+    }
+    .contactLinkWrap{
+        display: flex;
+        justify-content: center;
+    }
+    .contactLinkWrap a{
+        margin:auto 0.5em;
+    }
+    .contactLinkWrap a img{
+        width: 6vw;
+    }
+    .resumeLink{
+        margin-left: 0;
+    }
+    .contactMobile{
+        display: block;
+    }
+    .contactImg{
+        width: 3vw;
+    }
+    .NavBtn{
+        display: block;
+        padding: 0 1em;
+    }
+    .scrollBtn {
+        width: 1rem;
+        height: 0.3rem;
+    }
+    .projectCont{
+        display: block;
+        width: 80%;
+    }
+    .pLink{
+        height: auto;
+        border-top-right-radius: 20px;
+    }
+    .stackWrap {
+        margin: 0; 
+    }
+    .stack1{
+        font-size: 0.7em;
+    }
+    .fa-angle-double-down {
+        font-size: 1em;
+    }
+    .scrollContainer{
+        padding-bottom: 2em;
+    }
+    .projectText{
+        margin:0;
+        font-size: 6vw;
+    }
+    .projectIMG {
+        padding: 1em;
+    }
+    .projectImage{
+        width: 70vw;
+    }
+    .projectLink{
+        background: transparent;
+        height: auto;
+    }
+    .projectName{
+        font-size: 1.2em;
+        margin: 2em 0 1em 0;
+    }
+    .projectContent1{
+        font-size: 1em;
+    }
+    .workText,.educationText,.contactText {
+        font-size: 6vw;
+        margin: 2rem;
+    }
+    .workCard{
+        flex-flow: column;
+    }
+    .workDetails {
+        width: 100%;
+        padding: 0 0 1.6em 0;
+        margin: 0;
+        text-align: center;
+    }
+    .workCompany {
+        font-size: 4vw;
+        padding: 2em 2em 1em 2em;
+    }
+    .workTitle {
+        font-size: 2.4vw;
+        margin-bottom: 0; 
+        padding: 1em 0 0 0;
+    }
+    .workStack{
+        padding: 0;
+        height: auto;
+    }
+    .workStack span {
+        font-size: 1.5vw;
+    }
+    .workImg {
+        width: 100%;
+        margin-top: 1em;
+    }
+    .workContent {
+        font-size: 1em;
+        margin: 0.5em auto;
+    }
+    .workContent p {
+        margin-left: 0;
+    }
+    .workWrap {
+        margin-bottom: 0;
+    }
+    .educationDrgree{
+        font-size: 1.4em;
+    }
+    .educationSchool,.educationMajor{
+        font-size: 1.3em;
+    }
+    .educationDate {
+        font-size: 0.8em;
+        margin-bottom: 2em;
+    }
+    .courseContainer {
+        grid-template-columns: repeat(2, 1fr);
+        width: auto;
+    }
+    .courseCard{
+        width: 40vw;
+    }
+    .courseCard p {
+        font-size: 0.8em;
+        padding: 0;
+    }
+    .fa-window-restore, .fa-laravel, .fa-tools, .fa-sitemap, .fa-cart-shopping, .fa-list-check {
+        font-size: 1.5em;
+    }
+    .course{
+        font-size: 1.3vw;
+        margin-right: 0.7em;
+        margin-bottom: 1em;
+        padding: 4px 4px;
+    }
+    .courseWrap {
+        padding: 1em;
+    }
+    .educationWrap {
+        margin-bottom: 4em; 
+    }
+    .contactForm {
+        padding: 2em;
+        width: 70vw;
+        margin: auto;
+    }
+    .formLabel{
+        font-size: 0.8em;
+    }
+    .formBtn {
+        font-size: 0.8em;
+        padding: 0.5em;
+        width: auto;
+    }
+
+
+
+
+
 }

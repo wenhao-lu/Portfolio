@@ -1,25 +1,2 @@
-.main-nav {
-  margin-right: 5rem;
-}
-.main-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.main-nav li {
-  margin-right: 2rem;
-}
-.main-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 0.5rem;
-  border-radius: 0.25rem;
-}
-.main-nav a img{
-  width: 3vw;
-}
-.main-nav a img:hover {
-  animation: spin 1s linear infinite;
-}
+
 
