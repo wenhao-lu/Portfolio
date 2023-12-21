@@ -72,7 +72,7 @@ export default function Header() {
 
         {/* Dropdown menu */}
         {isDropdownVisible && (
-          <div className="dropdown-menu" style={{backgroundColor:'rgb(60,70,140,0.5) ', position: 'absolute', top: '1em', right: '0' }}>
+          <div className="dropdown-menu" style={{backgroundColor:'rgb(60,70,140,0.5) ', position: 'absolute', top: '3em', right: '0' }}>
             <ul>
               <li>
                 <a href="#projects">Projects</a>

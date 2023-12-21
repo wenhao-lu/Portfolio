@@ -88,6 +88,7 @@ debugging</p>
 
 
       </div>
+      <div className="projectHr"><hr></hr></div>
 
       {/* project 2 */}
       <div className="projectCont">
@@ -134,6 +135,7 @@ debugging</p>
           </div>
         </div>
       </div>
+      <div className="projectHr"><hr></hr></div>
 
       {/* project 3 */}
       <div className="projectCont">
@@ -178,6 +180,7 @@ debugging</p>
           </div>
         </div>
       </div>
+      <div className="projectHr"><hr></hr></div>
 
       {/* project 4 */}
       <div className="projectCont">
@@ -224,5 +227,6 @@ debugging</p>
       </div>
 
     </div>
+    
   );
 }
