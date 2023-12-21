@@ -1,0 +1,68 @@
+
+
+
+
+.main-nav a img:hover {
+    animation: spin 1s linear infinite;
+}
+
+.resumeLogo:hover {
+    animation: spin 1s linear infinite;
+}
+
+.scrollUpButton:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.fa-globe:hover,.fa-github:hover{
+    color: white;
+}
+
+.projectImg img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.workLink:hover {
+    animation: spin 1s linear infinite;
+}
+
+.unisyncLink:hover{
+    color: #b1dafc;
+}
+
+.work-image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.formBtn:hover {
+    background-color: #4a4aff;
+    transform: scale(1.05);
+}
+
+   .resumeLogo:hover, .contactImg:hover {
+        animation:none;
+    }
+
+    .resumeLogo {
+    transition: transform 0.3s ease; 
+    }
+    .resumeLogo:hover{
+        animation:none;
+    }
+    .resumeLogo:active {
+        animation: mobileTouchAnimation 0.5s ease;
+    }
+    @keyframes mobileTouchAnimation {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }

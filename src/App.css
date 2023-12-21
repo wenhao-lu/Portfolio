@@ -140,7 +140,7 @@ ul {
 .scrollUpButton {
     position: fixed;
     bottom: 2em;
-    right: 2em;
+    right: 1em;
     font-size: 2em;
     color: gray;
     cursor: pointer;
@@ -617,9 +617,17 @@ ul {
     }
     .fa-bars{
         color:#e7e7e7;
-        top:0.5em;
-        right:0.5em;
+        position: fixed;
+        top:1.2em;
+        right:1.3em;
         font-size: 1.5em;
+    }
+    .fa-caret-square-down{
+        color:#e7e7e7;
+        font-size: 1.5em;
+        position: fixed;
+        top:1.2em;
+        right:1.3em;
     }
     #mainIntro{
         margin-top: 22vh;
@@ -648,7 +656,7 @@ ul {
     .contactLinkWrap a img{
         width: 10vw;
     }
-    .resumeLogo:hover, .contactImg:hover {
+    .contactImg:hover {
         animation:none;
     }
     .resumeLink{
@@ -768,13 +776,14 @@ ul {
     .workImg {
         width: 100%;
         margin-top: 1em;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
     }
     .unisyncLink{
-        position: absolute;
-        z-index: 1;
-        top: 5em;
-        right: 0.1em;
         color: #81bff3;
+        position: initial;
+        margin: 0.2em auto;
     }
     .workContent {
         font-size: 1em;
@@ -845,6 +854,29 @@ ul {
         font-size: 1.5em;
         width: 7vw;
     }
+
+    /* Mobile touch animation */
+    .resumeLogo {
+        transition: transform 0.3s ease; 
+    }
+    .resumeLogo:hover{
+        animation:none;
+    }
+    .resumeLogo:active {
+        animation: mobileTouchAnimation 0.5s ease;
+    }
+    @keyframes mobileTouchAnimation {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
 
 
 

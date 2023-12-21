@@ -67,12 +67,12 @@ export default function Header() {
       {/* Nav menu for mobile devices */}
       <div className="mobile-menu">
         <a className="NavBtn" onClick={toggleDropdown}>
-          <i className="fas fa-bars"></i>
+          { isDropdownVisible ? <i class="fas fa-caret-square-down"></i>: <i className="fas fa-bars"></i>}
         </a>
-
+        
         {/* Dropdown menu */}
         {isDropdownVisible && (
-          <div className="dropdown-menu" style={{backgroundColor:'rgb(60,70,140,0.5) ', position: 'absolute', top: '3em', right: '0' }}>
+          <div className="dropdown-menu" style={{backgroundColor:'rgb(60,70,140,0.5) ', position: 'fixed', top: '3.5em', right: '0.5em' }}>
             <ul>
               <li>
                 <a href="#projects">Projects</a>
