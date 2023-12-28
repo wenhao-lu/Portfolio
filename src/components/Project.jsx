@@ -43,6 +43,53 @@ export default function ProjectList() {
         <div className="projectLeft">
           <div className="pLink">
             <div className="stackWrap">
+              <span className="stack1">React.JS</span>
+              <span className="stack1">Node.JS</span>
+              <span className="stack1">Git</span>
+              <span className="stack1">Agile</span>
+              <span className="stack1">Figma</span>
+            </div>
+          </div>
+
+          <div className="projectIMG">
+            <a href="https://welcomr---cultural-hub.glitch.me/"  target="_blank">
+              <img src="assets/images/welcomr1.png"  alt="project-image" className="projectImage"/>
+            </a>
+          </div>
+        </div>
+
+        <div className="projectRight">
+          <div className="projectLink">
+            <a href="https://welcomr---cultural-hub.glitch.me/"  target="_blank">
+            <i className="fas fa-globe"></i>
+            </a>
+
+            <a href="https://github.com/wenhao-lu/Cultural-Hub" target="_blank">
+              <i className="fab fa-github"></i>
+            </a>
+          </div>
+        
+          <div className="pDes">
+            <div className="projectName">
+              <p>Cultural-Hub APP</p><p>(team project)</p>
+            </div>
+
+            <div className="projectContent1">
+              <p className="projectText1">&#10095; Collaborated with UX Designers and Content Strategist to develop a three screens App</p>
+              <p className="projectText2">&#10095; Solely developed the 2nd Event Listing page using React.JS, bringing designers' Figma prototype to life</p>
+              <p>&#10095; Maintained mobile-friendly design principles and accessibility standards</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div className="projectHr"><hr></hr></div>
+
+      {/* project 2 */}
+      <div className="projectCont">
+        <div className="projectLeft">
+          <div className="pLink">
+            <div className="stackWrap">
               <span className="stack1">Node.JS</span>
               <span className="stack1">npm</span>
               <span className="stack1">CLI</span>
@@ -89,99 +136,7 @@ debugging</p>
       </div>
       <div className="projectHr"><hr></hr></div>
 
-      {/* project 2 */}
-      <div className="projectCont">
-        <div className="projectLeft">
-          <div className="pLink">
-            <div className="stackWrap">
-              <span className="stack1">React.JS</span>
-              <span className="stack1">Node.JS</span>
-              <span className="stack1">Git</span>
-              <span className="stack1">Agile</span>
-              <span className="stack1">Figma</span>
-            </div>
-          </div>
-
-          <div className="projectIMG">
-            <a href="https://welcomr---cultural-hub.glitch.me/"  target="_blank">
-              <img src="assets/images/welcomr.png"  alt="project-image" className="projectImage"/>
-            </a>
-          </div>
-        </div>
-
-        <div className="projectRight">
-          <div className="projectLink">
-            <a href="https://welcomr---cultural-hub.glitch.me/"  target="_blank">
-            <i className="fas fa-globe"></i>
-            </a>
-
-            <a href="https://github.com/wenhao-lu/Cultural-Hub" target="_blank">
-              <i className="fab fa-github"></i>
-            </a>
-          </div>
-        
-          <div className="pDes">
-            <div className="projectName">
-              <p>Cultural-Hub APP</p><p>(team project)</p>
-            </div>
-
-            <div className="projectContent1">
-              <p className="projectText1">&#10095; Collaborated with UX Designers and Content Strategist to develop a three screens App</p>
-              <p className="projectText2">&#10095; Solely developed the Event Listing page using React.JS, bringing designers' Figma prototype to life</p>
-              <p>&#10095; Maintained mobile-friendly design principles and accessibility standards</p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div className="projectHr"><hr></hr></div>
-
       {/* project 3 */}
-      <div className="projectCont">
-        <div className="projectLeft">
-          <div className="pLink">
-            <div className="stackWrap">
-              <span className="stack1">Canvas</span>
-              <span className="stack1">CSS</span>
-              <span className="stack1">JavaScript</span>
-              <span className="stack1">RESTful API</span>
-            </div>
-          </div>
-
-          <div className="projectIMG">
-            <a href="http://game.wlkevin.com/"  target="_blank">
-              <img src="assets/images/game.png"  alt="project-image" className="projectImage"/>
-            </a>
-          </div>
-        </div>
-
-        <div className="projectRight">
-          <div className="projectLink">
-            <a href="http://game.wlkevin.com/"   target="_blank">
-            <i className="fas fa-globe"></i>
-            </a>
-
-            <a href="https://github.com/wenhao-lu/game"  target="_blank">
-              <i className="fab fa-github"></i>
-            </a>
-          </div>
-        
-          <div className="pDes">
-            <div className="projectName">
-              <p>HTML 2D Game</p>
-            </div>
-
-            <div className="projectContent1">
-              <p className="projectText1">&#10095; Developed a 2D game using pure JavaScript, CSS and HTML</p>
-              <p className="projectText2">&#10095; Implemented classic snake game mechanics with engaging anime-style UI, including music and sound effects</p>
-              <p>&#10095; Integrated a RESTful API to store user score data on an online server and interact with the database</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="projectHr"><hr></hr></div>
-
-      {/* project 4 */}
       <div className="projectCont">
         <div className="projectLeft">
           <div className="pLink">
@@ -224,6 +179,51 @@ debugging</p>
           </div>
         </div>
       </div>
+
+      {/* project 4 */}
+      <div className="projectCont">
+        <div className="projectLeft">
+          <div className="pLink">
+            <div className="stackWrap">
+              <span className="stack1">Canvas</span>
+              <span className="stack1">CSS</span>
+              <span className="stack1">JavaScript</span>
+              <span className="stack1">RESTful API</span>
+            </div>
+          </div>
+
+          <div className="projectIMG">
+            <a href="http://game.wlkevin.com/"  target="_blank">
+              <img src="assets/images/game1.png"  alt="project-image" className="projectImage"/>
+            </a>
+          </div>
+        </div>
+
+        <div className="projectRight">
+          <div className="projectLink">
+            <a href="http://game.wlkevin.com/"   target="_blank">
+            <i className="fas fa-globe"></i>
+            </a>
+
+            <a href="https://github.com/wenhao-lu/game"  target="_blank">
+              <i className="fab fa-github"></i>
+            </a>
+          </div>
+        
+          <div className="pDes">
+            <div className="projectName">
+              <p>HTML 2D Game</p>
+            </div>
+
+            <div className="projectContent1">
+              <p className="projectText1">&#10095; Developed a 2D game using pure JavaScript, CSS and HTML</p>
+              <p className="projectText2">&#10095; Implemented classic snake game mechanics with engaging anime-style UI, including music and sound effects</p>
+              <p>&#10095; Integrated a REST API to store user score data on an online server and interact with the database</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="projectHr"><hr></hr></div>
 
     </div>
     
