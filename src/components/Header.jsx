@@ -44,7 +44,7 @@ export default function Header() {
       <ul>
         <li>
           {/* main contact link (LinkedIn and GitHub) on the page's top right */}
-          <a href="https://www.linkedin.com/in/wenhao-kevin-l-6290b2145/" target="_blank">
+          <a href="https://www.linkedin.com/in/kevin-l-6290b2145/" target="_blank">
             <img
               src="assets/logo/linkedin.png"
               className="contactImg"

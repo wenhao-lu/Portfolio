@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-
 import "./Project.css";
 import "../App.css";
+
 
 export default function ProjectList() {
   const [projects, setProjects] = useState([]);
@@ -26,7 +26,6 @@ export default function ProjectList() {
       behavior: 'smooth', 
     });
   };
-
 
   return (
     <div className="projectWrap" id="projects">
@@ -54,9 +53,9 @@ export default function ProjectList() {
           </div>
 
           <div className="projectIMG">
-            <a href="https://www.npmjs.com/package/timesheet-automation?activeTab=versions" target="_blank">
+          <a href="https://www.npmjs.com/package/timesheet-automation?activeTab=versions" target="_blank">
               <img src="assets/images/time.png" alt="project-image" className="projectImage"/>
-            </a>
+              </a>
           </div>
         </div>
 

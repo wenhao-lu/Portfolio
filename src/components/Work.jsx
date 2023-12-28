@@ -6,9 +6,9 @@ export default function WorkList() {
   
     <div className="workWrap" id="work">
       <div className="workHr">
-        <i class="fab fa-android"></i>
-        <i class="fab fa-android"></i>
-        <i class="fab fa-android"></i>
+        <i className="fab fa-android"></i>
+        <i className="fab fa-android"></i>
+        <i className="fab fa-android"></i>
       </div>
       <div className="workText">Work Experience</div>
 

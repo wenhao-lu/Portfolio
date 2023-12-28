@@ -209,10 +209,7 @@ ul {
 .fa-globe:hover,.fa-github:hover{
     color: white;
 }
-.projectImage{
-    width: 26vw;
-    border-radius: 10px;
-}
+
 .projectName {
     font-size: 1.6em;
     color: #ffffff;
@@ -276,14 +273,13 @@ ul {
     border-image: linear-gradient(to bottom, #181818, #eee, #181818) 1 100%;
     padding-right: 8vw;
 }
-.projectImg img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    transition: transform 0.3s ease;
+.projectImage{
+    width: 26vw;
+    border-radius: 10px;
+    transition: transform 1s ease;
 }
-.projectImg img:hover {
-    transform: scale(1.05);
+.projectImage:hover {
+    transform: scale(1.5);
     cursor: pointer;
 }
 .projectTitle {
@@ -706,6 +702,9 @@ ul {
     }
     .projectImage{
         width: 100%;
+    }
+    .projectImage:hover {
+        transform:none;
     }
     .projectLink{
         background: transparent;
