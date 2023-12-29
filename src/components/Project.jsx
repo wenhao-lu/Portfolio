@@ -75,8 +75,8 @@ export default function ProjectList() {
             </div>
 
             <div className="projectContent1">
-              <p className="projectText1">&#10095; Collaborated with UX Designers and Content Strategist to develop a three screens App</p>
-              <p className="projectText2">&#10095; Solely developed the 2nd Event Listing page using React.JS, bringing designers' Figma prototype to life</p>
+              <p className="projectText1">&#10095; Collaborated with UX Designers and Content Strategists to develop a three screens App</p>
+              <p className="projectText2">&#10095; Independently developed the 2nd Event Listing page using React.JS, bringing designers' Figma prototype to life</p>
               <p>&#10095; Maintained mobile-friendly design principles and accessibility standards</p>
             </div>
 
@@ -123,10 +123,10 @@ export default function ProjectList() {
             </div>
 
             <div className="projectContent1">
-              <p className="projectText1">&#10095; Developed a CLI application using Node.js and Clockify's API</p>
+              <p className="projectText1">&#10095; Developed a Command Line Interface-CLI application using Node.js and Clockify's API</p>
               <p className="projectText2">&#10095; Contributed to CLI features, global functions, console log styling, API
-debugging</p>
-              <p>&#10095; Published package on NPM with 500+ downloads, allowing developers to manage time in code editor</p>
+debugging, and more</p>
+              <p>&#10095; Published package on NPM with 500+ downloads, allowing developers to manage time in code editors</p>
             </div>
 
           </div>
@@ -218,7 +218,7 @@ debugging</p>
             <div className="projectContent1">
               <p className="projectText1">&#10095; Developed a 2D game using pure JavaScript, CSS and HTML</p>
               <p className="projectText2">&#10095; Implemented classic snake game mechanics with engaging anime-style UI, including music and sound effects</p>
-              <p>&#10095; Integrated a REST API to store user score data on an online server and interact with the database</p>
+              <p>&#10095; Integrated a REST API to store user score data on an online server and dynamically interact with the database</p>
             </div>
           </div>
         </div>
