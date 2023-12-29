@@ -780,6 +780,7 @@ ul {
         display: flex;
         flex-flow: column;
         justify-content: center;
+        text-decoration: none;
     }
     .unisyncLink{
         color: #81bff3;
