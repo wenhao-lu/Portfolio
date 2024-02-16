@@ -58,8 +58,7 @@ ul {
 
 /* Mobnile dropdown menu */
 .mobile-menu {
-    z-index: 1;
-    
+    z-index: 1000;
     top: 1.5em;
     right: 1em;
 }
