@@ -1,6 +1,22 @@
+import { useState, useEffect } from "react";
 import "../App.css";
 
 export default function WorkList() {
+
+  const [works, setWorks] = useState([]);
+
+  // use Larevel backend API to fetch all works info from the database
+  async function fetchWorks() {
+    // the URL to call my APIs
+    let response = await fetch("https://www.wlkevin.com/api/works");
+    let data = await response.json();
+    //console.log(data);
+    setWorks(data);
+  }
+  
+  useEffect(() => {
+    fetchWorks();
+  }, []);
 
   return (
   
@@ -12,8 +28,9 @@ export default function WorkList() {
       </div>
       <div className="workText">Work Experience</div>
 
-{/* work 1 */}
-<div className="workContainer">
+{/* mapping through the works table retrieving all the data */}
+{works.map((work) => (
+<div className="workContainer" key={work.id}>
     <div className="workCard">
       
       <div className="workDetails">
@@ -27,36 +44,40 @@ export default function WorkList() {
           <p className="workTitle">Electronic Store Front Assistant<br></br>Intern Jul-Aug 2023</p>
         </div>
         <div>
+        {/* stacks */}
         <div className="workStack">
-          <span>Shopify</span>
-          <span>Wordpress</span>
-          <span>e-commerce</span>
-          <span>Teamwork</span>
+          {[...Array(10).keys()].map((index) => {
+            const workStackKey = `stack${index + 1}`;
+            // If stack data is null, render nothing on the HTML
+            if (!work[workStackKey]) {
+              return null;
+            }
+            return (
+              <span key={index} className="workStackSpan">
+                {work[workStackKey]}
+              </span>
+              );
+          })}
         </div>
-        <div className="workStack">
-          <span>PHP</span>
-          <span>HTML</span>
-          <span>Liquid</span>
-          <span>JavaScript</span>
-          <span>Data Management</span> 
-        </div>
+
         </div>
       </div>
 
       <div className="workImg">
-        <a href="https://unisyncdemo.wlkevin.com/" target="_blank">
-          <img className="work-image" src="assets/images/unisync.png" alt="work-image"/>
+        <a href={work.url} target="_blank">
+          <img className="work-image" src={work.image} alt="work-image"/>
           <i className="fas fa-globe unisyncLink"></i>
         </a>
       </div>
 
     </div>
     <div className="workContent">
-        <p className="projectText1">&#10095; Designed and developed company website with WordPress, leveraging PHP, jQuery and Figma to create a customized visually appealing user interface</p>
-        <p className="projectText2">&#10095; Developed E-stores on Shopify, customized websites according to clients specifications, using HTML, CSS, JavaScript and Liquid</p>
-        <p>&#10095; Administered and maintained E-stores for over 70 renowned clients, ensuring seamless e-commerce operations</p>
+        <p className="projectText1">&#10095; {work.content1}</p>
+        <p className="projectText2">&#10095; {work.content2}</p>
+        <p>&#10095; {work.content3}</p>
     </div>
   </div>
+))}
 
   </div>
 
