@@ -17,7 +17,7 @@ export default function Contact() {
     }
 
     try {
-      const response = await axios.post("https://www.wlkevin.com/api/contacts", {
+      const response = await axios.post("https://www.lu-kevin.com/api/contacts", {
         name,
         email,
         msg,

@@ -8,7 +8,7 @@ export default function WorkList() {
   // use Larevel backend API to fetch all works info from the database
   async function fetchWorks() {
     // the URL to call my APIs
-    let response = await fetch("https://www.wlkevin.com/api/works");
+    let response = await fetch("https://www.lu-kevin.com/api/works");
     let data = await response.json();
     //console.log(data);
     setWorks(data);

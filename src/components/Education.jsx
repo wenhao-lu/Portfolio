@@ -6,7 +6,7 @@ export default function Education() {
   const [educations, setEducations] = useState([]);
   // fetch all the education data from my backend server using API
   async function fetchEducations() {
-    let response = await fetch("https://www.wlkevin.com/api/educations");
+    let response = await fetch("https://www.lu-kevin.com/api/educations");
     let data = await response.json();
     //console.log(data);
     setEducations(data);

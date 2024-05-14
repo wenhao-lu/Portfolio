@@ -9,7 +9,7 @@ export default function ProjectList() {
   // use Larevel backend API to fetch all projects info from the database
   async function fetchProjects() {
     // the URL to call my APIs
-    let response = await fetch("https://www.wlkevin.com/api/showcases");
+    let response = await fetch("https://www.lu-kevin.com/api/showcases");
     let data = await response.json();
     //console.log(data);
     setProjects(data);
@@ -65,7 +65,7 @@ export default function ProjectList() {
               {/* project images */}
               <div className="projectIMG">
                 <a href={project.url} target="_blank">
-                  <img src={project.image} alt="project-image" className="projectImage" />
+                  <img src={`https://www.lu-kevin.com/${project.image}`} alt="project-image" className="projectImage" />
                 </a>
               </div>
             </div>
