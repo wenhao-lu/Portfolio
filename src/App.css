@@ -278,7 +278,6 @@ ul {
     transition: transform 1s ease;
 }
 .projectImage:hover {
-    transform: scale(1.5);
     cursor: pointer;
 }
 .projectTitle {

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Project.css";
 import "../App.css";
-
+import API_BASE_URL from "./apiConfig";
 
 export default function ProjectList() {
   const [projects, setProjects] = useState([]);
@@ -9,7 +9,7 @@ export default function ProjectList() {
   // use Larevel backend API to fetch all projects info from the database
   async function fetchProjects() {
     // the URL to call my APIs
-    let response = await fetch("https://www.lu-kevin.com/api/showcases");
+    let response = await fetch(`${API_BASE_URL}/api/showcases`);
     let data = await response.json();
     //console.log(data);
     setProjects(data);
@@ -65,7 +65,7 @@ export default function ProjectList() {
               {/* project images */}
               <div className="projectIMG">
                 <a href={project.url} target="_blank">
-                  <img src={`https://www.lu-kevin.com/${project.image}`} alt="project-image" className="projectImage" />
+                  <img src={`${API_BASE_URL}/${project.image}`} alt="project-image" className="projectImage" />
                 </a>
               </div>
             </div>
