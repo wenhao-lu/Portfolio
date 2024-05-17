@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "../App.css";
+import API_BASE_URL from "./apiConfig";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -17,7 +18,7 @@ export default function Contact() {
     }
 
     try {
-      const response = await axios.post("https://www.lu-kevin.com/api/contacts", {
+      const response = await axios.post(`${API_BASE_URL}/api/contacts`, {
         name,
         email,
         msg,

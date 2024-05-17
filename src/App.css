@@ -396,7 +396,7 @@ ul {
     border-radius: 10px;
 } 
 .work-image:hover {
-    transform: scale(1.05);
+    /*transform: scale(1.05);*/
     cursor: pointer;
 }
 .workImg ul{

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "../App.css";
+import API_BASE_URL from "./apiConfig";
 
 export default function WorkList() {
 
@@ -8,7 +9,7 @@ export default function WorkList() {
   // use Larevel backend API to fetch all works info from the database
   async function fetchWorks() {
     // the URL to call my APIs
-    let response = await fetch("https://www.lu-kevin.com/api/works");
+    let response = await fetch(`${API_BASE_URL}/api/works`);
     let data = await response.json();
     //console.log(data);
     setWorks(data);
@@ -65,7 +66,7 @@ export default function WorkList() {
 
       <div className="workImg">
         <a href={work.url} target="_blank">
-          <img className="work-image" src={work.image} alt="work-image"/>
+          <img className="work-image" src={`${API_BASE_URL}/${work.image}`} alt="work-image"/>
           <i className="fas fa-globe unisyncLink"></i>
         </a>
       </div>
