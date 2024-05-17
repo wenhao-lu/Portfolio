@@ -29,7 +29,7 @@ export default function Education() {
           <div className="educationDate">{education.date}</div>
         </div>
       ))}
-
+    
       {/* courseContainer */}
       <div className="courseContainer">
         <div className="courseCard">
