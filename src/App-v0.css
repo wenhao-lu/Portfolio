@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=League+Spartan&family=Open+Sans&family=Pacifico&family=Ubuntu&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=League+Spartan&family=Open+Sans&family=Pacifico&family=Ubuntu&display=swap');
 html {
   scroll-behavior: smooth;
 }
@@ -76,7 +76,7 @@ ul {
   font-size: 0.8em;
   color: white;
   text-decoration: none;
-  font-family: "League Spartan", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: bold;
 }
 
@@ -297,7 +297,7 @@ ul {
   font-size: 2.2vw;
   color: #ffffff;
   margin: 1rem 0 4rem 0;
-  font-family: "League Spartan", sans-serif;
+  font-family: 'League Spartan', sans-serif;
 }
 .projectTitle p {
   margin: 0;
@@ -378,7 +378,7 @@ ul {
   font-weight: bold;
   margin-top: 0;
   color: #ffffff;
-  font-family: "League Spartan", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   padding: 1em 0 0 1em;
   margin-bottom: 0;
 }
@@ -456,19 +456,19 @@ ul {
 .educationDrgree {
   font-size: 2.4em;
   font-weight: bold;
-  font-family: "League Spartan", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   margin-bottom: 0.3em;
 }
 .educationSchool {
   font-size: 2em;
   font-weight: bold;
-  font-family: "League Spartan", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   margin-bottom: 0.3em;
 }
 .educationMajor {
   font-size: 1.6em;
   font-weight: bold;
-  font-family: "League Spartan", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   margin-bottom: 0.3em;
   color: #81bff3;
 }
@@ -496,7 +496,7 @@ ul {
 }
 .courseCard p {
   font-size: 1.2em;
-  font-family: "League Spartan", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   padding: 1em;
   text-transform: uppercase;
 }
@@ -560,7 +560,7 @@ ul {
   font-size: 20px;
   font-weight: bold;
   color: #ffffff;
-  font-family: "League Spartan", sans-serif;
+  font-family: 'League Spartan', sans-serif;
 }
 .formInput,
 .formTextarea,
@@ -598,7 +598,7 @@ ul {
 }
 .formSubmitted {
   color: #81bff3;
-  font-family: "League Spartan", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-size: 2vw;
   font-weight: bold;
   text-align: center;

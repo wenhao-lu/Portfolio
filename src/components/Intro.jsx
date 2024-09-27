@@ -1,25 +1,27 @@
-import './Home.css';
-import '../App.css';
-import BtnDown from './BtnDown';
+// import './Home.css';
+// import '../App.css';
+// import BtnDown from './BtnDown';
 export default function Home() {
   return (
     <main id="mainIntro">
       <div className="introContainer">
         <div className="intro">
           {/* the intro and sections' navigation button */}
-          <p className="name">Kevin - Wenhao Lu</p>
-          <div className="resumeWrap">
-            <p className="introText felx border-double text-lg italic text-green-300">
-              Humble And Dedicated Full Stack Developer
-            </p>
-            <div className="contactLinkWrap">
+          <p className="name pl-4 text-[2rem] text-gray-100">
+            Kevin - Wenhao Lu
+          </p>
+          <p className="introText felx border-double pl-4 text-[1rem] text-gray-100">
+            Humble And Dedicated Full Stack Developer
+          </p>
+          <div className="resumeWrap flex flex-col items-center justify-center">
+            <div className="contactLinkWrap grid w-72 grid-cols-3 items-center">
               <a
-                className="resumeLink"
+                className="resumeLink flex justify-center"
                 href="../assets/files/resume.pdf"
                 target="_blank"
               >
                 <img
-                  className="resumeLogo"
+                  className="resumeLogo w-10"
                   src="assets/logo/resume.png"
                   alt="resume"
                 ></img>
@@ -29,22 +31,22 @@ export default function Home() {
               <a
                 href="https://www.linkedin.com/in/wenhao-kevin-l-6290b2145/"
                 target="_blank"
-                className="contactMobile"
+                className="contactMobile flex justify-center"
               >
                 <img
                   src="assets/logo/linkedin.png"
-                  className="contactImg"
+                  className="contactImg w-10"
                   alt="linkedin"
                 />
               </a>
               <a
                 href="https://github.com/wenhao-lu"
                 target="_blank"
-                className="contactMobile"
+                className="contactMobile flex justify-center"
               >
                 <img
                   src="assets/logo/github.png"
-                  className="contactImg"
+                  className="contactImg w-10"
                   alt="github"
                 />
               </a>
@@ -52,7 +54,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <BtnDown />
+      {/*<BtnDown />*/}
     </main>
   );
 }
