@@ -23,10 +23,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<AppLayout />}>
-            <Route index element={<Project1 />} />
+            <Route index element={<Project />} />
 
             <Route path="project" element={<ProjectLayout />}>
-              <Route index element={<Project1 />} />
+              <Route index element={<Project />} />
               <Route path="project1" element={<Project1 />} />
               <Route path="project2" element={<Project2 />} />
               <Route path="project3" element={<Project3 />} />
