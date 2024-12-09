@@ -1,6 +1,4 @@
-# Portfolio Page (Version 2)
-
-# Indeveloping
+# Portfolio Page (Version 2 in developing)
 
 This updated version of my portfolio gives a clean and seamless user experience with a focus on simplicity and modern design.
 
