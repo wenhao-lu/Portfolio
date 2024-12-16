@@ -5,6 +5,6 @@ This updated version of my portfolio gives a clean and seamless user experience 
 ## Technologies Used
 
 - **Frontend**: React, Node.js, Express, Tailwind CSS
-- **Backend**: Python, Djando, RESTful API, Data Management[CMS](https://cms.lu-kevin.com/) 
-- **Hosting**: Frontend deployed using [GitHub Pages](https://pages.github.com/), backend deployed on a remote server.
+- **Backend**: Python, Djando, RESTful API, Data Management via [CMS](https://cms.lu-kevin.com/) 
+- **Hosting**: Frontend deployed using [GitHub Pages](https://wenhao-lu.github.io/), backend deployed on a remote server.
 
