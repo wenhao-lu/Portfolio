@@ -1,5 +1,10 @@
-## Portfolio
+# Portfolio Page
 
-### My portfolio page Tech Stack: React.JS, Node.JS, Express, RESTful API, Canvas, Vite
+This updated version of my portfolio gives a clean and seamless user experience with a focus on simplicity and modern design.
 
-### 'npm install'
+## Technologies Used
+
+- **Frontend**: React, Node.js, Express, Tailwind CSS
+- **Backend**: Python, Djando, RESTful API, Data Management[CMS](https://cms.lu-kevin.com/) 
+- **Hosting**: Frontend deployed using [GitHub Pages](https://pages.github.com/), backend deployed on a remote server.
+
