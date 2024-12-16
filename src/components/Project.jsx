@@ -5,27 +5,46 @@ import API_BASE_URL from "./apiConfig";
 
 export default function ProjectList() {
   const [projects, setProjects] = useState([]);
+  const [stacks, setStacks] = useState([]);
+  const [error, setError] = useState(null);
 
-  // use Larevel backend API to fetch all projects info from the database
   async function fetchProjects() {
-    // the URL to call my APIs
-    let response = await fetch(`${API_BASE_URL}/api/showcases`);
+    let response = await fetch(`${API_BASE_URL}/api/projects`);
     let data = await response.json();
-    //console.log(data);
+    console.log(data);
     setProjects(data);
   }
   
+  async function fetchStacks() {
+    let response = await fetch(`${API_BASE_URL}/api/stacks`);
+    let data = await response.json();
+    //console.log(data);
+    setStacks(data);
+  }
+
+  function mapStackNames(projectStacks) {
+    return projectStacks.map((stackId) => {
+      const stack = stacks.find((s) => s.id === stackId);
+      return stack ? stack.name : "Unknown Stack";
+    });
+  }
+
   useEffect(() => {
+    fetchStacks();
     fetchProjects();
   }, []);
 
-   // Scroll up button
-   const scrollUp = () => {
+  // Scroll up button
+  const scrollUp = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', 
+      behavior: 'smooth',
     });
   };
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
   return (
     <div className="projectWrap" id="projects">
@@ -38,67 +57,64 @@ export default function ProjectList() {
         <i className="fas fa-arrow-up"></i>
       </div>
 
-
-        {/* mapping through the projects table retrieving all the data */}
-        {projects.map((project) => (
-
+      {/* Mapping through the projects table and displaying project data */}
+      {projects.map((project) => (
         <div className="projectCont" key={project.id}>
-            <div className="projectLeft">
-              <div className="pLink">
-                {/* stacks */}
-                <div className="stackWrap">
-                  {[...Array(10).keys()].map((index) => {
-                    const stackKey = `stack${index + 1}`;
-                    // If stack data is null, render nothing on the HTML
-                    if (!project[stackKey]) {
-                      return null;
-                    }
-                    return (
-                      <span key={index} className="stack1">
-                        {project[stackKey]}
-                      </span>
-                    );
-                  })}
-                </div>
+          <div className="projectLeft">
+            <div className="pLink">
+              {/* Display stacks */}
+              {/* 
+              <div className="stackWrap">
+                {project.stackNames.map((stackName, index) => (
+                  <span key={index} className="stack1">
+                    {stackName}
+                  </span>
+                ))}
               </div>
-
-              {/* project images */}
-              <div className="projectIMG">
-                <a href={project.url} target="_blank">
-                  <img src={`${API_BASE_URL}/${project.image}`} alt="project-image" className="projectImage" />
-                </a>
-              </div>
+              */}
+              <div className="stackWrap">
+            {mapStackNames(project.stacks).map((stackName, index) => (
+              <span key={index} className="stack1">{stackName}</span>
+            ))}
             </div>
 
-            <div className="projectRight">
-              <div className="projectLink">
-                <a href={project.url} target="_blank">
-                  <i className="fas fa-globe"></i>
-                </a>
 
-                <a href={project.slug} target="_blank">
-                  <i className="fab fa-github"></i>
-                </a>
+
+            </div>
+
+            {/* Project images */}
+            <div className="projectIMG">
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
+                <img src={`${API_BASE_URL}/${project.image}`} alt="project-image" className="projectImage" />
+              </a>
+            </div>
+          </div>
+
+          <div className="projectRight">
+            <div className="projectLink">
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
+                <i className="fas fa-globe"></i>
+              </a>
+
+              <a href={project.slug} target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github"></i>
+              </a>
+            </div>
+
+            <div className="pDes">
+              <div className="projectName">
+                <p>{project.title}</p>
               </div>
 
-              <div className="pDes">
-                <div className="projectName">
-                  <p>{project.title}</p>
-                </div>
-
-                <div className="projectContent1">
-                  <p className="projectText1">&#10095; {project.content1}</p>
-                  <p className="projectText2">&#10095; {project.content2}</p>
-                  <p className="projectText3">&#10095; {project.content3}</p>
-                </div>
+              <div className="projectContent1">
+                <p className="projectText1">&#10095; {project.content1}</p>
+                <p className="projectText2">&#10095; {project.content2}</p>
+                <p className="projectText3">&#10095; {project.content3}</p>
               </div>
             </div>
+          </div>
         </div>
-
-        ))}
-
-      
+      ))}
     </div>
-    
   );
 }
