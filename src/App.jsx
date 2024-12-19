@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Education from "./components/Education";
 import Project from "./components/Project";
-import Work from "./components/Work";
+// import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -15,7 +15,7 @@ function App() {
         <Header />
         <Home />
         <Project />
-        <Work />
+        {/* <Work /> */}
         <Education />
         <Contact />
         <Footer />

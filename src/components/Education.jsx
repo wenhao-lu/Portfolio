@@ -29,11 +29,13 @@ export default function Education() {
           <div className="educationDate">{education.date}</div>
         </div>
       ))}
-    
+
       {/* courseContainer */}
       <div className="courseContainer">
         <div className="courseCard">
-          <p>FULL STACK<br></br>FRONTEND&BACKEND</p>
+          <p>
+            FULL STACK<br></br>FRONTEND&BACKEND
+          </p>
           <i className="far fa-window-restore"></i>
           <div className="courseWrap">
             <span className="course">HTML</span>
@@ -41,7 +43,7 @@ export default function Education() {
             <span className="course">JavaScript</span>
             <span className="course">C#</span>
             <span className="course">PHP</span>
-            <span className="course">MySQL</span>
+            <span className="course">SQL</span>
             <span className="course">React</span>
             <span className="course">Node.js</span>
             <span className="course">Express</span>
@@ -49,35 +51,42 @@ export default function Education() {
         </div>
 
         <div className="courseCard">
-          <p>LIBRARIES&<br></br>FRAMEWORKS</p>
+          <p>
+            LIBRARIES&<br></br>FRAMEWORKS
+          </p>
           <i className="fab fa-laravel"></i>
           <div className="courseWrap">
-            <span className="course">jQuery</span>
+            <span className="course">Django</span>
             <span className="course">Laravel</span>
+            <span className="course">jQuery</span>
             <span className="course">Bootstrap</span>
             <span className="course">ASP.NET</span>
-            <span className="course">Jasmine</span>
             <span className="course">LAMP</span>
             <span className="course">MERN</span>
           </div>
         </div>
 
         <div className="courseCard">
-          <p>IDE&<br></br>Tools</p>
+          <p>
+            IDE&<br></br>Tools
+          </p>
           <i className="fas fa-tools"></i>
           <div className="courseWrap">
             <span className="course">VS Code</span>
             <span className="course">Postman</span>
             <span className="course">MAMP</span>
             <span className="course">CLI</span>
-            <span className="course">Localwp</span>
+            <span className="course">MySQL</span>
             <span className="course">MongoDB</span>
             <span className="course">DBeaver</span>
           </div>
         </div>
-      
+
         <div className="courseCard">
-          <p>TECHNIQUES<br></br><span className="courseSpan">span</span></p>
+          <p>
+            TECHNIQUES<br></br>
+            <span className="courseSpan">span</span>
+          </p>
           <i className="fas fa-sitemap"></i>
           <div className="courseWrap">
             <span className="course">MVC</span>
@@ -90,7 +99,10 @@ export default function Education() {
         </div>
 
         <div className="courseCard">
-          <p>E-COMMERCE<br></br><span className="courseSpan">span</span></p>
+          <p>
+            E-COMMERCE<br></br>
+            <span className="courseSpan">span</span>
+          </p>
           <i className="fa-solid fa-cart-shopping"></i>
           <div className="courseWrap">
             <span className="course">Shopify</span>
@@ -100,7 +112,10 @@ export default function Education() {
         </div>
 
         <div className="courseCard">
-          <p>Project Management<br></br><span className="courseSpan">span</span></p>
+          <p>
+            Project Management<br></br>
+            <span className="courseSpan">span</span>
+          </p>
           <i className="fa-solid fa-list-check"></i>
           <div className="courseWrap">
             <span className="course">Git</span>
@@ -110,9 +125,7 @@ export default function Education() {
             <span className="course">Scrum</span>
           </div>
         </div>
-
       </div>
-
     </div>
   );
 }
