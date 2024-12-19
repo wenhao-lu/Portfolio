@@ -695,7 +695,8 @@ ul {
     margin: 0;
   }
   .stack1 {
-    font-size: 0.7em;
+    font-size: 0.6em;
+    font-weight: 700;
   }
   .fa-angle-double-down {
     font-size: 1em;
